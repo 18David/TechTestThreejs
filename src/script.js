@@ -124,6 +124,7 @@ document.getElementById('btnXR').onclick = async function activateXR() {
         },
         undefined,
         function(event){
+            console.error(event);
             const split = url.split('/');
             const local = '/assets/'+ split[split.length-1];
             loader.load(local, function(gltf) {
