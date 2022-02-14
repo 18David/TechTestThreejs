@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Starter</title>
+</head>
+<body>
+    <div id="start-panel">
+        <div id="panel">
+            <input type="url" id="url" name="url" placeholder="URL of a GLB model">
+            <button id="btnXR" onclick="activateXR()">Load GLB And Start App</button>
+        </div>
+    </div>
+    <div id="stabilization"></div>
+    <!--canvas id="canvas" class="webgl"></!--canvas-->
+
+    <style>
+
+        #start-panel{
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #panel{
+            margin: auto;
+            border-color: aqua;
+            border-radius: 2rem;
+            border-width: 2px;
+            border-style: solid;
+            padding : 2rem;
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</body>
+
+</html>
